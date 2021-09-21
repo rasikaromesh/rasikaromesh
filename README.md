@@ -1,35 +1,70 @@
-[![](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/wild-flame)
+# Getting Started with Create React App
 
-# jekyll-simple
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## simple
-simple is a theme designed for blogger using static site generator like jekyll, Hexo etc.
+## Available Scripts
 
-Especially for those who writes in both Chinese and English. The font-type setting looks really good when writers use Chinese mixed with English.
+In the project directory, you can run:
 
-Supposedly, this could work with Japanese as well but never had a chance to try.
+### `npm start`
 
-## Story behind this theme
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-It has been long that using font with Chinese in web was a tedious and time-consuming work. It would be almost impossible to make different OS or devices to look the same.
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-iOS 9 has pulished some new fonts in Chinese and I decided to make one theme that looks good on iOS devices, at the same time, making it acceptable on computers using other fonts.
+### `npm test`
 
-So mobile goes first, then the macOS.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## ^-^
+### `npm run build`
 
-You can click the button [Say Thanks!](https://saythanks.io/to/wild-flame) at the first of README if you use/like my project. :D
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Thanks you guys, I got a lot of thanks from people.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- [ryan](https://saythanks.io/note/a9a342ba-e9aa-4707-b169-05b6ae49757d)
-- [Daniel Moore](https://saythanks.io/note/da81706c-8884-4dbc-89b0-eed242ac3b19) and feel free to visit his work [border quiz](http://danielmoore.us/borders-quiz?singapore-planning-areas)
-- [David Laing](https://saythanks.io/note/fb5d24eb-3be8-4f92-842b-c6dd7ce4c239)
-- [Meg](https://saythanks.io/note/6d56e228-e17c-4641-9524-9f9fd6205068)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-![image](https://user-images.githubusercontent.com/4491950/53502929-0d375880-3aea-11e9-9ce1-13eba2ec4643.png)
+### `npm run eject`
 
-- And more
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-![image](https://user-images.githubusercontent.com/4491950/53502875-e1b46e00-3ae9-11e9-97e4-d70d038a36e9.png)
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
