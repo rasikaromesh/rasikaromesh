@@ -13,7 +13,7 @@ export default function Portfolio() {
             </ul>
             <div className="container">
                 <div className="item">
-                    <img src="assets/banking.png" alt="" />
+                <img src="assets/banking.png" alt="" />
                     <h3>Banking App</h3>
                 </div>
             </div>
