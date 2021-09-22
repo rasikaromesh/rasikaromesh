@@ -1,84 +1,89 @@
 .intro {
+  font-family: 'Poppins', sans-serif;
   display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
 
-  .left {
-    flex: 0.5;
+  .imageContainer {
+    width: auto;
+    max-width: 50%;
+    max-height: 280px;
+    border-radius: 50%;
+    margin-bottom: 2.4em;
 
-    .imageContainer {
-      width: 700px;
-      height: 700px;
-      overflow: hidden;
-      background-color: crimson;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      float: right;
+    img {
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
 
-      img {
-        height: 100%;
+  .hi {
+    position: absolute;
+    height: 200px;
+    font-size: 172px;
+    font-weight: 700;
+    margin-top: -72px;
+    margin-right: 2%;
+    z-index: 3;
+    text-shadow: 9px -9px 0 #fff;
+  }
+
+  .wrapper {
+    margin-top: 5%;
+    height: 100%;
+    width: 100%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    h1 {
+      font-size: 60px;
+    }
+
+    h2 {
+      font-size: 35px;
+    }
+
+    h3 {
+      font-size: 20px;
+
+      span {
+        font-size: inherit;
+        color: green;
+      }
+
+      .ityped-cursor {
+        animation: blink 1s infinite;
+      }
+
+      @keyframes blink {
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
       }
     }
   }
 
-  .right {
-    flex: 0.5;
-    position: relative;
+  a {
+    position: absolute;
+    bottom: 10px;
+    left: 40%;
 
-    .wrapper {
-      height: 100%;
-      width: 100%;
-      padding-left: 50px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      h1 {
-        font-size: 60px;
-        margin: 10px 0;
-      }
-
-      h2 {
-        font-size: 35px;
-      }
-
-      h3 {
-        font-size: 20px;
-
-        span {
-          font-size: inherit;
-          color: green;
-        }
-
-        .ityped-cursor {
-          animation: blink 1s infinite;
-        }
-
-        @keyframes blink {
-          50% {
-            opacity: 1;
-          }
-          100% {
-            opacity: 0;
-          }
-        }
-      }
+    img {
+      width: 30px;
+      animation: arrowBlink 2s infinite;
     }
 
-    a {
-      position: absolute;
-      bottom: 10px;
-      left: 40%;
-
-      img {
-        width: 30px;
-        animation: arrowBlink 2s infinite;
-      }
-
-      @keyframes arrowBlink {
-        100% {
-          opacity: 0;
-        }
+    @keyframes arrowBlink {
+      100% {
+        opacity: 0;
       }
     }
   }
