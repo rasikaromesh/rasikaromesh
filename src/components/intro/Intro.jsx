@@ -10,7 +10,7 @@ export default function Intro() {
 
       backDelay: 1500,
       backSpeed: 60,
-      strings: ['Developer', 'Designer', 'Contet Creater'],
+      strings: ['Developer', 'Designer', 'Blogger'],
     });
   }, []);
   return (
@@ -24,17 +24,11 @@ export default function Intro() {
       <div className="hi">Hi.</div>
       <div className="hiShadow"></div>
       <div className="wrapper">
-        <h2>
-          <em>Hi</em> There, I'm
-        </h2>
-        <h1>Romesh Dhananjaya</h1>
+        <h2>I am Romesh Dhananjaya</h2>
         <h3>
-          Freelance <span ref={textRef}></span>
+          I am a <span ref={textRef}></span>
         </h3>
       </div>
-      <a href="#portfolio">
-        <img src="assets/down.png" alt="" />
-      </a>
     </div>
   );
 }

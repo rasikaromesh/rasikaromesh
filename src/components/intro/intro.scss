@@ -1,3 +1,4 @@
+@import '../../global.scss';
 .intro {
   font-family: 'Poppins', sans-serif;
   display: flex;
@@ -9,13 +10,13 @@
 
   .imageContainer {
     width: auto;
-    max-width: 50%;
+    max-width: 25%;
     max-height: 280px;
     border-radius: 50%;
-    margin-bottom: 2.4em;
+    // margin-bottom: 2.4em;
 
     img {
-      height: 100%;
+      height: 250px;
       vertical-align: middle;
     }
   }
@@ -25,14 +26,15 @@
     height: 200px;
     font-size: 172px;
     font-weight: 700;
-    margin-top: -72px;
+    letter-spacing: -12px;
+    margin-top: 7%;
     margin-right: 2%;
-    z-index: 3;
     text-shadow: 9px -9px 0 #fff;
+    overflow: hidden;
   }
 
   .wrapper {
-    margin-top: 5%;
+    margin-top: 7%;
     height: 100%;
     width: 100%;
     padding-left: 50px;
@@ -41,20 +43,19 @@
     align-items: center;
     position: relative;
 
-    h1 {
-      font-size: 60px;
-    }
-
     h2 {
       font-size: 35px;
+      font-weight: 300;
+      word-spacing: -2px;
     }
 
     h3 {
       font-size: 20px;
+      width: 300px;
 
       span {
         font-size: inherit;
-        color: green;
+        color: $mainColor;
       }
 
       .ityped-cursor {

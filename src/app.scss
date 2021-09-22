@@ -3,7 +3,7 @@
 
   .section {
     width: 100%;
-    height: calc(100vh - 10vh);
+    // height: calc(100vh - 10vh);
     position: relative;
     top: 10vh;
     scrollbar-width: none; // for firefox
@@ -12,10 +12,11 @@
       display: none;
     }
 
-    > * {
-      width: 100vw;
-      height: calc(100vh - 10vh);
-      scroll-snap-align: start;
+    .cardWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 3%;
     }
   }
 }
