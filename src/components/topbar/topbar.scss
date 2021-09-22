@@ -11,18 +11,19 @@
   transition: all 1s ease;
 
   .wrapper {
-    padding: 10px, 30px;
+    padding: 10px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     .left {
+      margin-left: 20%;
       display: flex;
       align-items: center;
       .logo {
         font-family: 'Sacramento', cursive;
         font-size: 40px;
-        font-weight: 700;
+        font-weight: 900;
         text-decoration: none;
         color: inherit;
         margin-right: 40px;
@@ -46,6 +47,7 @@
     }
 
     .right {
+      margin-right: 10%;
       .hamburger {
         width: 32px;
         height: 25px;

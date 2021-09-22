@@ -1,0 +1,18 @@
+.socialButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  a {
+    margin: 0px 5px;
+
+    span {
+      transition: all 0.5s ease;
+      color: rgb(216, 215, 219);
+
+      &:hover {
+        color: rgb(110, 109, 116);
+      }
+    }
+  }
+}
