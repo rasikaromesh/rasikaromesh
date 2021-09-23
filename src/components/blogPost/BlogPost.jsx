@@ -3,10 +3,10 @@ import './blogPost.scss';
 export default function BlogPost() {
   return (
     <div className="blog-post">
-      <div className="title">Where does it come from?</div>
       <div className="image">
         <img src="https://picsum.photos/400" alt="" />
       </div>
+      <div className="title">Where does it come from?</div>
       <div className="body">
         Contrary to popular belief, Lorem Ipsum is not simply random text. It
         has roots in a piece of classical Latin literature from 45 BC, making it
