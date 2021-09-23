@@ -2,6 +2,7 @@ import Topbar from './components/topbar/Topbar';
 import Intro from './components/intro/Intro';
 import Menu from './components/menu/Menu';
 import Card from './components/common/card/Card';
+import Blog from './components/blog/Blog';
 import './app.scss';
 import { useState } from 'react';
 
@@ -15,6 +16,7 @@ function App() {
         <Intro />
         <div className="cardWrapper">
           <Card />
+          <Blog />
         </div>
       </div>
     </div>

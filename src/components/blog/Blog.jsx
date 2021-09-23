@@ -1,5 +1,12 @@
-import React from 'react';
+import BlogPostCard from './BlogPostCard/BlogPostCard';
 
 export default function Blog() {
-  return <div>Blog</div>;
+  return (
+    <div>
+      Blog
+      <BlogPostCard />
+      <BlogPostCard />
+      <BlogPostCard />
+    </div>
+  );
 }

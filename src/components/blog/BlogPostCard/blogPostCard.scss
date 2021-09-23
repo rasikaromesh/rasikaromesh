@@ -1,0 +1,71 @@
+@import '../../../global.scss';
+.blog-post-card {
+  display: flex;
+  flex-direction: row;
+  width: 70vw;
+  background-color: white;
+  box-shadow: -1px 1px 10px lightgray;
+  color: black;
+  padding: 10px;
+  margin: 10 0;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex: 2;
+
+    .year {
+      margin-top: 5%;
+      font-weight: 300;
+      letter-spacing: 3px;
+    }
+
+    .day {
+      font-size: 40px;
+      color: $mainColor;
+      font-weight: 700;
+      font-style: bold;
+    }
+
+    .month {
+      font-weight: 300;
+      font-size: 20px;
+      margin-bottom: 5%;
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    flex: 10;
+
+    .title {
+      font-size: 30px;
+      color: $lightSecondoryColor;
+      font-weight: 500;
+      font-style: bold;
+    }
+    .summery {
+      padding: 10px 0;
+    }
+
+    .tags {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-right: 5%;
+      margin-bottom: 5px;
+
+      .tag {
+        margin: 0px 5px;
+        padding: 1px 5px;
+        border-radius: 2px;
+        border: $lightMainColor 1px solid;
+        background-color: $ultraLightMainColor;
+        color: $mainColor;
+      }
+    }
+  }
+}
