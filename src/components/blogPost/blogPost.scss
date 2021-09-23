@@ -1,0 +1,19 @@
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5%;
+  margin-top: 3%;
+
+  .title {
+    font-size: 30px;
+    padding: 5px 0;
+    align-self: start;
+  }
+
+  .body {
+    font-size: 18px;
+    word-spacing: 3px;
+  }
+}
