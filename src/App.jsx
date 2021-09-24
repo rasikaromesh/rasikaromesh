@@ -1,26 +1,27 @@
 import Topbar from './components/topbar/Topbar';
-import Intro from './components/intro/Intro';
-import Portfolio from './components/portfolio/Portfolio'
-import Works from './components/works/Works'
-import Testimonials from './components/tetimonials/Testimonials'
-import Contacts from './components/contacts/Contacts'
-import Menu from './components/menu/Menu'
-import "./app.scss";
-import { useState } from 'react';
-
+import BlogPost from './components/blogPost/BlogPost';
+import MainPage from './components/MainPage/MainPage';
+import Footer from './components/footer/Footer';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import './app.scss';
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false)
   return (
     <div className="app">
-      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+      <Topbar />
+      {/* <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> */}
       <div className="section">
-        <Intro/>
-        <Portfolio/>
-        <Works/>
-        <Testimonials/>
-        <Contacts/>
+        <Router>
+          <Switch>
+            <Route path="/post/:id">
+              <BlogPost />
+            </Route>
+            <Route exact path="/">
+              <MainPage />
+            </Route>
+          </Switch>
+        </Router>
+        <Footer />
       </div>
     </div>
   );

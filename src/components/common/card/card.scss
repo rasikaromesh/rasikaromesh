@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .figure-box {
+    display: flex;
+    position: relative;
+    background-color: rgb(194, 70, 70);
+    height: 100%;
+    width: 200px;
+    color: springgreen;
+
+    img {
+      border-radius: 10%;
+    }
+
+    .title {
+      position: absolute;
+      bottom: 20%;
+    }
+  }
+}

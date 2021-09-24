@@ -1,0 +1,27 @@
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3% 10%;
+
+  .title {
+    font-size: 30px;
+    padding: 5px 0;
+    align-self: start;
+  }
+
+  .body {
+    margin-top: 10px;
+    word-spacing: 3px;
+
+    .paragraph {
+      padding-bottom: 10px;
+      font-size: 18px;
+    }
+    .code {
+      padding-bottom: 25px;
+      justify-content: center;
+    }
+  }
+}
