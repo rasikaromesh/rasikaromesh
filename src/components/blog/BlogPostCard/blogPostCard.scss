@@ -15,6 +15,7 @@
     align-items: center;
     justify-content: space-around;
     flex: 2;
+    cursor: pointer;
 
     .year {
       margin-top: 5%;
@@ -46,9 +47,11 @@
       color: $lightSecondoryColor;
       font-weight: 500;
       font-style: bold;
+      cursor: pointer;
     }
     .summery {
       padding: 10px 0;
+      cursor: pointer;
     }
 
     .tags {
