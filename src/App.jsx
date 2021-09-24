@@ -1,7 +1,7 @@
 import Topbar from './components/topbar/Topbar';
 import BlogPost from './components/blogPost/BlogPost';
 import MainPage from './components/MainPage/MainPage';
-import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './app.scss';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <div className="section">
         <Router>
           <Switch>
-            <Route path="/post">
+            <Route path="/post/:id">
               <BlogPost />
             </Route>
             <Route exact path="/">

@@ -1,10 +1,11 @@
 import { useHistory } from 'react-router';
 import './blogPostCard.scss';
 import Tag from './Tag/Tag';
-export default function BlogPostCard({ date, title, summery, tags }) {
+export default function BlogPostCard({ date, title, summery, tags, onClick }) {
+  console.log(onClick);
   let history = useHistory();
   const onClickHandler = () => {
-    history.push('/post');
+    onClick();
   };
   return (
     <div className="blog-post-card" onClick={onClickHandler}>
@@ -18,7 +19,7 @@ export default function BlogPostCard({ date, title, summery, tags }) {
         <div className="summery">{summery}</div>
         <div className="tags">
           {tags.map((tag) => (
-            <Tag>{tag}</Tag>
+            <Tag key={tag}>{tag}</Tag>
           ))}
         </div>
       </div>

@@ -1,21 +1,26 @@
 import BlogPostCard from './BlogPostCard/BlogPostCard';
+import posts from '../../data/posts';
+import { useHistory } from 'react-router';
 
 export default function Blog() {
-  var date = {
-    year: '2021',
-    month: 'September',
-    day: '29',
+  let history = useHistory();
+  const onClickHandler = (id) => {
+    console.log(id);
+    history.push(`/post/${id}`);
   };
-  var title = 'The standard Lorem Ipsum passage, used since the 1500s';
-  var summery =
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco l';
-  var tags = ['Java', 'Node', 'Python'];
   return (
     <div>
       <h1>Blog</h1>
-      <BlogPostCard date={date} title={title} summery={summery} tags={tags} />
-      {/* <BlogPostCard />
-      <BlogPostCard /> */}
+      {posts.map((post) => (
+        <BlogPostCard
+          onClick={() => onClickHandler(post.id)}
+          key={post.id}
+          date={post.date}
+          title={post.title}
+          summery={post.summery}
+          tags={post.tags}
+        />
+      ))}
     </div>
   );
 }
