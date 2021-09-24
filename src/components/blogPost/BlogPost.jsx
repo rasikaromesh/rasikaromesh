@@ -6,7 +6,6 @@ import { CopyBlock, dracula } from 'react-code-blocks';
 export default function BlogPost() {
   let { id } = useParams();
   const post = Posts[id - 1];
-  console.log(post);
   const renderBody = ({ type, text }) => {
     if (type === 'code') {
       return (

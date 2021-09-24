@@ -65,8 +65,8 @@ const post1 = {
     {
       type: 'code',
       text: `@Bean
-      public RetryTemplate retryTemplate() {
-      }`,
+  public RetryTemplate retryTemplate() {
+}`,
     },
     {
       type: 'paragraph',
@@ -85,7 +85,72 @@ const post1 = {
     },
     {
       type: 'paragraph',
-      text: 'The next thing is RetryPolicy.',
+      text: `The next part is RetryPolicy. In Spring Boot there are multiple RetryPolicy classes, designed for different use cases. 
+      (AlwaysRetryPolicy, CircuitBreakerRetryPolicy, CompositeRetryPolicy, ExceptionClassifierRetryPolicy, ExperssionRetryPolicy, NeverRetryPolicy, SimpleRetryPolicy, TimeoutRetryPolocy)`,
+    },
+    {
+      type: 'paragraph',
+      text: `For this code I am going to use SimpleRetryPolicy.`,
+    },
+    {
+      type: 'code',
+      text: `SimpleRetryPolicy retryPolicy = new SimpleRetryPolicy();
+retryPolicy.setMaxAttempts(2);
+retryTemplate.setRetryPolicy(retryPolicy);`,
+    },
+    {
+      type: 'paragraph',
+      text: `MaxAttemps value will define the number of retries. In this example if it fails the first time this will retry two more times.`,
+    },
+    {
+      type: 'paragraph',
+      text: `Then we can use this retryTemplate bean where we need to retry. Let’s assume we have a service called TestService and it has a method called callApi(). 
+      So here’s how we can use retryTemplate.`,
+    },
+    {
+      type: 'code',
+      text: `@Component
+public class Test {
+    @Autowired
+    TestService testService;
+
+    @Autowired
+    RetryTemplate retryTemplate;
+
+    public void invokeService(){
+        retryTemplate.execute(arg0 -> {
+            testService.callApi();
+            return null;
+        });
+    }
+}
+      `,
+    },
+    {
+      type: 'paragraph',
+      text: `You can find below complete RetryTemplateConfiguration class`,
+    },
+    {
+      type: 'code',
+      text: `@Configuration
+@EnableRetry
+public class RetryConfig {
+    @Bean
+    public RetryTemplate retryTemplate() {
+        RetryTemplate retryTemplate = new RetryTemplate();
+
+        FixedBackOffPolicy fixedBackOffPolicy = new FixedBackOffPolicy();
+        fixedBackOffPolicy.setBackOffPeriod(5000l);// 5 second wait
+        retryTemplate.setBackOffPolicy(fixedBackOffPolicy);
+
+        SimpleRetryPolicy retryPolicy = new SimpleRetryPolicy();
+        retryPolicy.setMaxAttempts(2);
+        retryTemplate.setRetryPolicy(retryPolicy);
+
+        return retryTemplate;
+    }
+}
+  `,
     },
   ],
   summery: `We can find many use cases where we need to retry on some services or APIs when there is an error in the api. It might be a network failure or any application failure. So here is the way`,

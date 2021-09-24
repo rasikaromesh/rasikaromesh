@@ -5,7 +5,6 @@ import { useHistory } from 'react-router';
 export default function Blog() {
   let history = useHistory();
   const onClickHandler = (id) => {
-    console.log(id);
     history.push(`/post/${id}`);
   };
   return (
