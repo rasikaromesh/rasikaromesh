@@ -1,7 +1,8 @@
-import Topbar from './components/topbar/Topbar';
+import Topbar from './components/common/topbar/Topbar';
 import BlogPost from './components/blogPost/BlogPost';
 import MainPage from './components/MainPage/MainPage';
-import Footer from './components/footer/Footer';
+import Footer from './components/common/footer/Footer';
+import Editor from './components/editor/Editor';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './app.scss';
 
@@ -13,6 +14,9 @@ function App() {
       <div className="section">
         <Router>
           <Switch>
+            <Route path="/editor">
+              <Editor />
+            </Route>
             <Route path="/post/:id">
               <BlogPost />
             </Route>
