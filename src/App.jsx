@@ -2,9 +2,10 @@ import Topbar from './components/common/topbar/Topbar';
 import BlogPost from './components/blogPost/BlogPost';
 import MainPage from './components/MainPage/MainPage';
 import Footer from './components/common/footer/Footer';
-import Editor from './components/editor/Editor';
+import EditorComponent from './components/EditorComponent/EditorComponent';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './app.scss';
+import '@react-page/editor/lib/index.css'; //this is for react-page
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Router>
           <Switch>
             <Route path="/editor">
-              <Editor />
+              <EditorComponent />
             </Route>
             <Route path="/post/:id">
               <BlogPost />

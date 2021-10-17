@@ -1,0 +1,13 @@
+.editor-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 85vh;
+  padding: 0 20px;
+  background-color: #aaa;
+  position: relative;
+
+  .download-icon {
+    position: absolute;
+    bottom: 1vh;
+  }
+}
