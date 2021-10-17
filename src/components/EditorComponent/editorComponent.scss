@@ -9,5 +9,9 @@
   .download-icon {
     position: absolute;
     bottom: 1vh;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

@@ -14,7 +14,17 @@ const EditorComponent = () => {
   const [value, setValue] = useState(null);
 
   const downloadFile = async () => {
-    const fileName = 'file';
+    let data = value.rows[0].cells[0].dataI18n.default.slate;
+    let title = null;
+    for (const d of data) {
+      if (d.type.includes('HEADINGS')) {
+        title = d.children[0].text;
+        break;
+      }
+    }
+
+    console.log(title);
+    const fileName = title ? title : 'Title is null';
     const json = JSON.stringify(value);
     const blob = new Blob([json], { type: 'application/json' });
     const href = await URL.createObjectURL(blob);
