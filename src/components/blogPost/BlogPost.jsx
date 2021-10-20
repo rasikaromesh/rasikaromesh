@@ -1,7 +1,16 @@
 import './blogPost.scss';
 import Posts from '../../data/posts';
+import slate from '@react-page/plugins-slate';
+import image from '@react-page/plugins-image';
+import Editor from '@react-page/editor';
+import spacer from '@react-page/plugins-spacer';
+import divider from '@react-page/plugins-divider';
 import { useParams } from 'react-router';
 import { CopyBlock, dracula } from 'react-code-blocks';
+
+import { useState } from 'react';
+
+const cellPlugins = [slate(), image, spacer, divider];
 
 export default function BlogPost() {
   let { id } = useParams();
@@ -18,11 +27,10 @@ export default function BlogPost() {
   };
   return (
     <div className="blog-post">
-      <div className="image">
-        <img src="https://picsum.photos/400" alt="" />
-      </div>
       <div className="title">{post.title}</div>
-      <div className="body">{post.body.map((item) => renderBody(item))}</div>
+      <div className="body">
+        <Editor cellPlugins={cellPlugins} value={post} readOnly={true} />
+      </div>
     </div>
   );
 }

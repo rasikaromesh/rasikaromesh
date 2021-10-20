@@ -1,3 +1,3 @@
-import post1 from './1';
+import post1 from './file.json';
 const posts = [post1];
 export default posts;
