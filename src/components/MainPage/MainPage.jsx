@@ -8,7 +8,7 @@ export default function MainPage() {
       <Intro />
       <div className="cardWrapper">
         {/* <Card /> */}
-        {/* <Blog /> */}
+        <Blog />
         {/* <BlogPost></BlogPost> */}
       </div>
     </div>
