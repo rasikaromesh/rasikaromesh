@@ -6,7 +6,13 @@ const post1 = {
     day: '10',
   },
   title: 'How to retry on service when failure happens.',
+  thumbnail: 'https://picsum.photos/400',
   body: [
+    {
+      type: 'image',
+      url: 'https://picsum.photos/400',
+      alignment: 'center',
+    },
     {
       type: 'paragraph',
       text: `We can find many use cases where we need to retry on some services or APIs when there is an error in the api. It might be a network failure or any application failure. So today I am going to explain a way to retry with a Java Spring application.`,
