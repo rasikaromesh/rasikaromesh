@@ -1,6 +1,7 @@
 import Topbar from './components/topbar/Topbar';
 import BlogPost from './components/blogPost/BlogPost';
 import MainPage from './components/MainPage/MainPage';
+import CarouselComponent from './components/carousel/CarouselComponent';
 import Footer from './components/footer/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './app.scss';
@@ -13,6 +14,9 @@ function App() {
       <div className="section">
         <Router>
           <Switch>
+            <Route path="/photos/carousel">
+              <CarouselComponent />
+            </Route>
             <Route path="/post/:id">
               <BlogPost />
             </Route>
@@ -21,6 +25,8 @@ function App() {
             </Route>
           </Switch>
         </Router>
+      </div>
+      <div className="footer-container">
         <Footer />
       </div>
     </div>
