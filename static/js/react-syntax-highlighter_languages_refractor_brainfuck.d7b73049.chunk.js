@@ -1,2 +1,0 @@
-(this["webpackJsonpromeshdhananjaya.com"]=this["webpackJsonpromeshdhananjaya.com"]||[]).push([[18],{148:function(a,e,n){"use strict";function t(a){a.languages.brainfuck={pointer:{pattern:/<|>/,alias:"keyword"},increment:{pattern:/\+/,alias:"inserted"},decrement:{pattern:/-/,alias:"deleted"},branching:{pattern:/\[|\]/,alias:"important"},operator:/[.,]/,comment:/\S+/}}a.exports=t,t.displayName="brainfuck",t.aliases=[]}}]);
-//# sourceMappingURL=react-syntax-highlighter_languages_refractor_brainfuck.d7b73049.chunk.js.map
