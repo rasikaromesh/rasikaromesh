@@ -5,13 +5,11 @@ import Footer from './components/common/footer/Footer';
 import EditorComponent from './components/EditorComponent/EditorComponent';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './app.scss';
-import '@react-page/editor/lib/index.css'; //this is for react-page
 
 function App() {
   return (
     <div className="app">
       <Topbar />
-      {/* <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> */}
       <div className="section">
         <Router>
           <Switch>
