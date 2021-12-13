@@ -5,6 +5,11 @@
   margin: 10px 10%;
   align-items: center;
 
+  .image {
+    display: flex;
+    justify-content: center;
+  }
+
   .title {
     font-size: 30px;
     padding: 5px 0;
