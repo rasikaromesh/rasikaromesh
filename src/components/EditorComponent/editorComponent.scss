@@ -1,0 +1,18 @@
+.editor-wrapper {
+  min-height: calc(100vh - 115px);
+  margin: 10px 10%;
+  padding: 0 20px;
+  .react-page-controls-mode-toggle-control-group {
+    bottom: -72px !important;
+    max-height: 570px !important;
+  }
+
+  .download-icon {
+    position: absolute;
+    bottom: 2vh;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

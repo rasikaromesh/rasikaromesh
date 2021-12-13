@@ -1,7 +1,6 @@
 import './blogPostCard.scss';
 import Tag from './Tag/Tag';
 export default function BlogPostCard({ date, title, summery, tags, onClick }) {
-  console.log(onClick);
   const onClickHandler = () => {
     onClick();
   };

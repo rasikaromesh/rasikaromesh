@@ -2,9 +2,12 @@
   height: 100vh;
 
   .section {
-    width: 100%;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: calc(100vh - 115px);
     position: relative;
-    top: 10vh;
     scrollbar-width: none; // for firefox
     &::-webkit-scrollbar {
       //other browsers

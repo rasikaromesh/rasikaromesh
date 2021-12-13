@@ -7,7 +7,7 @@ export default function MainPage() {
     <div>
       <Intro />
       <div className="cardWrapper">
-        <Card />
+        {/* <Card /> */}
         <Blog />
         {/* <BlogPost></BlogPost> */}
       </div>

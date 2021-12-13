@@ -1,6 +1,6 @@
 import './topbar.scss';
 import { Person, Mail } from '@material-ui/icons';
-import SocialButtons from '../common/socialButtons/SocialButtons';
+import SocialButtons from '../socialButtons/SocialButtons';
 
 export default function Topbar() {
   return (

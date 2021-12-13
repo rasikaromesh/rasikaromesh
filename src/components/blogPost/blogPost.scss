@@ -1,9 +1,14 @@
 .blog-post {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  // display: flex;
+  // flex-direction: column;
+  min-height: calc(100vh - 115px);
+  margin: 10px 10%;
   align-items: center;
-  margin: 3% 10%;
+
+  .image {
+    display: flex;
+    justify-content: center;
+  }
 
   .title {
     font-size: 30px;
