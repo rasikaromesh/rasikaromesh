@@ -1,2 +1,0 @@
-(this["webpackJsonpromeshdhananjaya.com"]=this["webpackJsonpromeshdhananjaya.com"]||[]).push([[60],{189:function(a,t,n){"use strict";function s(a){a.languages.ini={comment:/^[ \t]*[;#].*$/m,selector:/^[ \t]*\[.*?\]/m,constant:/^[ \t]*[^\s=]+?(?=[ \t]*=)/m,"attr-value":{pattern:/=.*/,inside:{punctuation:/^[=]/}}}}a.exports=s,s.displayName="ini",s.aliases=[]}}]);
-//# sourceMappingURL=react-syntax-highlighter_languages_refractor_ini.07e209a4.chunk.js.map
